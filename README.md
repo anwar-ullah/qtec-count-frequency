@@ -4,9 +4,9 @@
   $text_length = strlen($text);
   $frequency = 0;
 
-  /* A loop to slide pattern[] one by one */
+  // A loop to slide pattern[] one by one 
   for ($i = 0; $i <= $text_length - $pattern_length; $i++){
-      /* For current index i, check for pattern match */
+      // For current index i, check for pattern match
       for ($j = 0; $j < $pattern_length; $j++)
           if ($text[$i+$j] != $pattern[$j])
               break;
